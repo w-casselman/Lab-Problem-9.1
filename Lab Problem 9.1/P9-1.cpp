@@ -11,6 +11,7 @@ void printArray(int array[], int size);
 void printEvenIndices(int array[], int size);
 void printEvens(int array[], int size);
 void printBackwards(int array[], int size);
+void firstLast(int array[], int size);
 
 int main(void)
 {
@@ -31,6 +32,7 @@ int main(void)
 	printEvenIndices(arr, SIZE);
 	printEvens(arr, SIZE);
 	printBackwards(arr, SIZE);
+	firstLast(arr, SIZE);
 
 	return 0;
 }
@@ -79,5 +81,12 @@ void printBackwards(int array[], int size)
 		cout << array[i] << "  ";
 	}
 	cout << endl;
+	return;
+}
+
+void firstLast(int array[], int size)
+{
+	cout << "First and last:      ";
+	cout << array[0] << "  " << array[size - 1] << endl;
 	return;
 }
