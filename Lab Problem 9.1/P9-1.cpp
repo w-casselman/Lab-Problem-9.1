@@ -9,6 +9,7 @@ using namespace std;
 
 void printArray(int array[], int size);
 void printEvenIndices(int array[], int size);
+void printEvens(int array[], int size);
 
 int main(void)
 {
@@ -27,6 +28,7 @@ int main(void)
 
 	printArray(arr, SIZE);
 	printEvenIndices(arr, SIZE);
+	printEvens(arr, SIZE);
 
 	return 0;
 }
@@ -48,6 +50,20 @@ void printEvenIndices(int array[], int size)
 	for (int i = 0; i < size; i += 2)
 	{
 		cout << array[i] << "  ";
+	}
+	cout << endl;
+	return;
+}
+
+void printEvens(int array[], int size)
+{
+	cout << "Even values:         ";
+	for (int i = 0; i < size; i++)
+	{
+		if (array[i] % 2 == 0)
+		{
+			cout << array[i] << "  ";
+		}
 	}
 	cout << endl;
 	return;
