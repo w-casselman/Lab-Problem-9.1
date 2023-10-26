@@ -87,6 +87,6 @@ void printBackwards(int array[], int size)
 void firstLast(int array[], int size)
 {
 	cout << "First and last:      ";
-	cout << array[0] << "  " << array[size - 1] << endl;
+	cout << array[0] << "  " << array[size - 1];
 	return;
 }
