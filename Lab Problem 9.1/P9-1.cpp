@@ -10,6 +10,7 @@ using namespace std;
 void printArray(int array[], int size);
 void printEvenIndices(int array[], int size);
 void printEvens(int array[], int size);
+void printBackwards(int array[], int size);
 
 int main(void)
 {
@@ -29,6 +30,7 @@ int main(void)
 	printArray(arr, SIZE);
 	printEvenIndices(arr, SIZE);
 	printEvens(arr, SIZE);
+	printBackwards(arr, SIZE);
 
 	return 0;
 }
@@ -64,6 +66,17 @@ void printEvens(int array[], int size)
 		{
 			cout << array[i] << "  ";
 		}
+	}
+	cout << endl;
+	return;
+}
+
+void printBackwards(int array[], int size)
+{
+	cout << "Reversed order:      ";
+	for (int i = size - 1; i >= 0; i--)
+	{
+		cout << array[i] << "  ";
 	}
 	cout << endl;
 	return;
